@@ -3,6 +3,7 @@ from gan_functions import *
 from simulation import *
 from loss_functions import *
 from data_split import *
+from global_variables import *
 
 discriminator_loss_function = BCELoss()
 generator_loss_function = RMSENoArbitrageLoss(penalty = [1, 10, 10, 10, 1])
